@@ -363,7 +363,11 @@ export const TenantFullscreenModal: React.FC<TenantFullscreenModalProps> = ({ is
   });
 
   return (
-    <div className="fixed inset-0 z-50 bg-white text-slate-800 flex flex-col overflow-hidden animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-50 text-slate-800 flex flex-col overflow-hidden animate-in fade-in duration-200">
+      <div className="absolute inset-0 z-[-1]">
+        <div className="absolute inset-0 bg-slate-900" />
+        <div className="absolute inset-0 backdrop-blur-xl bg-white/70" />
+      </div>
       
       {/* Toast Notification */}
       {notificationMsg && (

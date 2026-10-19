@@ -301,13 +301,7 @@ export const MapView: React.FC<MapViewProps> = ({
           {mapStyle === 'osm' ? <Globe className="w-4 h-4 text-sky-500" /> : <Layers className="w-4 h-4 text-emerald-500" />}
         </button>
 
-        <button
-          onClick={onRefreshLocation}
-          title="Recenter to User Location"
-          className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-md p-2.5 rounded-2xl shadow-xl border border-slate-200 text-sky-600 flex items-center justify-center"
-        >
-          <Navigation className="w-4 h-4" />
-        </button>
+
       </div>
     </div>
   );
