@@ -1,0 +1,6 @@
+{
+  "name": "GiGSpot - Local Gig & Location Radar",
+  "description": "Discover local gigs and track your exact location on an interactive OpenStreetMap map.",
+  "requestFramePermissions": ["geolocation", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
