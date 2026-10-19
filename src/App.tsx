@@ -189,7 +189,7 @@ export default function App() {
       )}
 
       {/* Map View */}
-      <div className="absolute inset-0 pb-20">
+      <div className="absolute inset-0">
         <MapView
           userLocation={userLocation}
           gigs={gigs}
