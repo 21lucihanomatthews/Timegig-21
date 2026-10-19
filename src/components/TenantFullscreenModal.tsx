@@ -1123,7 +1123,7 @@ export const TenantFullscreenModal: React.FC<TenantFullscreenModalProps> = ({ is
       </main>
 
       {/* DEDICATED FULLSCREEN TENANT BOTTOM MENU BAR */}
-      <nav className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-1 sm:px-3 py-1.5 flex items-center justify-around shadow-lg">
+      <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 px-1 sm:px-3 py-1.5 flex items-center justify-around shadow-lg">
         
         {/* 1. Overview */}
         <button

@@ -179,7 +179,7 @@ export default function App() {
   };
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden bg-slate-950 font-sans select-none">
+    <div className="fixed inset-0 w-full h-full h-[100dvh] min-h-[100dvh] overflow-hidden bg-slate-950 font-sans select-none flex flex-col">
       
       {/* Referral Link Join Banner */}
       {referralBannerMsg && (
@@ -189,7 +189,7 @@ export default function App() {
       )}
 
       {/* Map View */}
-      <div className="absolute inset-0 pb-12">
+      <div className="absolute inset-0 pb-20">
         <MapView
           userLocation={userLocation}
           gigs={gigs}

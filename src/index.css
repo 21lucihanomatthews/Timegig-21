@@ -54,3 +54,26 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(100, 116, 139, 0.5);
 }
+
+/* Ensure HTML, body, and root properly stretch to dynamic viewport on Vercel and mobile */
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Ensure bottom menu bar stays visible and clear on all devices and Vercel environments */
+.app-bottom-dock {
+  padding-bottom: max(0.65rem, env(safe-area-inset-bottom, 0px));
+}
+
+/* Vercel preview toolbar (vercel-live-feedback) adjustment so it doesn't obstruct bottom menu bar */
+vercel-live-feedback,
+[data-vercel-toolbar] {
+  bottom: 84px !important;
+  z-index: 9999 !important;
+}
